@@ -138,6 +138,18 @@ npm run build    # emit dist/
 npm run typecheck
 ```
 
+## Releasing
+
+Merges into `main` that carry a SemVer label create a git tag automatically:
+
+| PR label | Bump |
+|----------|------|
+| `patch` | `0.1.0` → `0.1.1` |
+| `minor` | `0.1.0` → `0.2.0` |
+| `major` | `0.1.0` → `1.0.0` |
+
+Add exactly one of those labels before merge (if several are present, `major` wins over `minor` over `patch`). No label → no tag. The workflow bumps `package.json`, commits `chore: release vX.Y.Z`, and pushes annotated tag `vX.Y.Z`.
+
 ## License
 
 MIT
