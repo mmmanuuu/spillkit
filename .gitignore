@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.local
+.DS_Store
+
+# Local design notes — not part of the published toolkit
+SPEC.md
+
+# Vite example / local development server
+example/

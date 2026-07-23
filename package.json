@@ -1,0 +1,31 @@
+{
+  "name": "spillkit",
+  "version": "0.1.0",
+  "description": "WebGL shader surfaces for UI elements — shaders, masks, and edge effects.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "dev": "vite --config example/vite.config.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "ogl": "^1.0.11"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vite": "^6.3.5"
+  },
+  "license": "MIT"
+}
